@@ -1,0 +1,46 @@
+<div class="contrainer">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+
+              <div class="col-md-9 col-xs-12">
+
+
+                      <h4 class='inline-header'>Post:</h4>
+
+                      <div ng-repeat="post in postCtrl.posts">
+                        <div class="col-md-3 col-xs-12 thumbnail">
+                            {{post.postTitle}}
+                            <br>
+                            {{post.postBody}}
+                            <br>
+                            {{post.postDate}}
+                        </div>
+                      </div>
+                        <!-- end of repeat -->
+
+
+  <div class="contrainer">
+    <form class="form-horizontal" ng-submit="postCtrl.createPost()">
+        <div class="form-group">
+            <label class="col-md-4 control-label">Title</label>
+            <div class="col-md-4">
+                <input id="postTitle" ng-model="postCtrl.newPost.postTitle" type="text" class="form-control input-md" required="">
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-4">
+            <button class="btn btn-primary">Save Post</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+              </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>

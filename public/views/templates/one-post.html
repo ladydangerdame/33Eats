@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class='row'>
+
+                <div class="col-md-3 col-xs-12 thumbnail">
+                  <img ng-src="{{onePokemonCtrl.pokemon.image}}" alt="pokemon image">
+                  <li class="list-group-item">
+                    <h4 class='inline-header'>Name:</h4>
+                    <span ng-hide="editing">{{onePokemonCtrl.pokemon.name}}</span>
+                    <input ng-show="editing" ng-model="pokemon.evolves_from" type="text" class="form-control input-md">
+                  </li>
+                  <li class="list-group-item">
+                    <h4 class='inline-header'>Pokedex:</h4>
+                    <span ng-hide="editing">{{onePokemonCtrl.pokemon.pokedex}}</span>
+                    <input ng-show="editing" ng-model="pokemon.evolves_from" type="text" class="form-control input-md">
+                  </li>
+                  <li class="list-group-item">
+                    <h4 class='inline-header'>Evoles From:</h4>
+                    <span ng-hide="editing">{{onePokemonCtrl.pokemon.evolves_from}}</span>
+                    <input ng-show="editing" ng-model="pokemon.evolves_from" type="text" class="form-control input-md">
+                  </li>
+                </div>
+
+
+
+
+              <!-- end of ng-repeat -->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="33eats">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>33Eats</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/styles/styles.css"> -->
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/PostsIndexController.js"></script>
+    <!-- <script src="/public/scripts/controllers/OnePokemonController.js"></script> -->
+
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+        <div class="jumbotron">
+          <div class="container">
+            <h1>33Eats!</h1>
+          </div>
+        </div>
+
+        <div ng-view></div>
+
+  </body>
+</html>
