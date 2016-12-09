@@ -24,7 +24,11 @@ app.get('/', function homepage (req, res) {
 
 app.get('/api/posts', controllers.post.index);
 
+app.post('/api/posts/', controllers.post.create);
+
 app.get('/api/users', controllers.user.index);
+
+
 
 
 app.listen(process.env.PORT || 3000, function () {

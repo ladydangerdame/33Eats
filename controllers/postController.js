@@ -10,6 +10,7 @@ function index(req, res) {
   db.Post.create(req.body, function(err, post) {
     if (err) { console.log('error', err); }
     res.json(post);
+    console.log(req)
   });
 }
 
