@@ -1,7 +1,7 @@
 console.log("Sanity Check: JS is working!");
 
 angular
-  .module('pokemon', ['ngRoute'])
+  .module('33eats', ['ngRoute'])
   .config(config);
 
 config.$inject = ['$routeProvider', '$locationProvider'];
@@ -9,14 +9,14 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/views/templates/pokemons.html',
-      controllerAs: 'pokemonCtrl',
-      controller: 'PokemonsIndexController'
+      templateUrl: '/views/templates/posts.html',
+      controllerAs: 'postCtrl',
+      controller: 'PostsIndexController'
     })
-    .when('/pokemons/:id', {
-      templateUrl: '/views/templates/one-pokemon.html',
-      controllerAs: 'onePokemonCtrl',
-      controller: 'OnePokemonController'
+    .when('/posts/:id', {
+      templateUrl: '/views/templates/one-post.html',
+      controllerAs: 'onePostCtrl',
+      controller: 'OnePostController'
     })
 
     $locationProvider.html5Mode({
