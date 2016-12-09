@@ -1,0 +1,26 @@
+{
+  "name": "33_eats",
+  "version": "1.0.0",
+  "description": "A food blog by Cohort 33 for WDI",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.8.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophieluo/33Eats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sophieluo/33Eats/issues"
+  },
+  "homepage": "https://github.com/sophieluo/33Eats#readme"
+}
