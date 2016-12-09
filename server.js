@@ -24,6 +24,8 @@ app.get('/', function homepage (req, res) {
 
 app.get('/api/posts', controllers.post.index);
 
+app.get('/api/users', controllers.user.index);
+
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Express server is running on http://localhost:3000/');

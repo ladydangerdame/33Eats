@@ -8,7 +8,7 @@ var UserSchema = new Schema({
   // passwordDigest: String,
   username: String,
   imgUrl: String,
-  posts: [{type: Schema.Types.ObjectId, ref: 'User'}]
+  // posts: [{type: Schema.Types.ObjectId, ref: 'User'}]
 });
 
 var User = mongoose.model('User', UserSchema);
