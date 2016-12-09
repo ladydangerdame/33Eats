@@ -6,7 +6,15 @@ function index(req, res) {
    });
  }
 
+ function create(req, res) {
+  db.Post.create(req.body, function(err, post) {
+    if (err) { console.log('error', err); }
+    res.json(post);
+  });
+}
+
 // export public methods here
 module.exports = {
   index: index,
+  create: create
 };

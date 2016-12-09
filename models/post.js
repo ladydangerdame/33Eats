@@ -12,10 +12,10 @@ var PostSchema = new Schema({
   postTitle: String,
   postDate: String,
   postBody: String,
-  postUser: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    },
+  // postUser: {
+  //       type: Schema.Types.ObjectId,
+  //       ref: 'User'
+  //   },
   // postComment: [CommentsSchema]
 });
 

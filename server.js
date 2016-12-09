@@ -16,6 +16,15 @@ app.get('/', function homepage (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+
+
+
+
+
+
+app.get('/api/posts', controllers.post.index);
+
+
 app.listen(process.env.PORT || 3000, function () {
   console.log('Express server is running on http://localhost:3000/');
 });
